@@ -7,7 +7,9 @@ import time
 structure = get_gs_structure()
 
 def importrange(copy_ssname, copy_wsname, paste_ssname, paste_wsname, rows_between = [None,None], cols_between = [None,None],
-                 paste = [1,1], structure = structure):
+                 paste = [1,1], structure = structure,
+                reverse_row = False, reverse_col = False,
+                transpose = False):
     default_gsurl = 'https://docs.google.com/spreadsheets/d/'
     gs = GoogleSheet()
 
@@ -47,8 +49,25 @@ def importrange(copy_ssname, copy_wsname, paste_ssname, paste_wsname, rows_betwe
     else:
         copy_tocolumn_py = None
 
-    set_with_dataframe(to_worksheet, from_data.iloc[copy_fromrow_py:copy_torow_py, copy_fromcolumn_py:copy_tocolumn_py],
-                       include_index=False, include_column_header=False, row=paste_fromrow_py, col=paste_fromcolumn_py)
+    pre_data = from_data.iloc[copy_fromrow_py:copy_torow_py, copy_fromcolumn_py:copy_tocolumn_py]
+
+    if reverse_row:
+        pre_data =  pre_data.loc[::-1]
+    else : pass
+
+    if reverse_col:
+        pre_data = pre_data.loc[:,::-1]
+    else : pass
+
+    if transpose:
+        paste_data = pre_data.transpose()
+    else: paste_data=pre_data
+
+    set_with_dataframe(to_worksheet, paste_data,
+                       include_index=False,
+                       include_column_header=False,
+                       row=paste_fromrow_py,
+                       col=paste_fromcolumn_py)
 
 # AOQ_RAW(AOQ_by_seg) -> 주문량 예측 Promo(AOQ_by_seg)
 importrange(copy_ssname = "AOQ_RAW", copy_wsname= "AOQ_by_seg", paste_ssname="주문량 예측 Promo", paste_wsname="AOQ_by_seg(importrange)", rows_between=[2,14])
