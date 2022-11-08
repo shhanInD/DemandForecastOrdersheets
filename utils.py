@@ -8,7 +8,8 @@ import json
 
 class GoogleSheet:
     def __init__(self):
-        self.json_path = "./credfile/dbwisely-v2-01bfe15ef302.json"
+        self.json_path = "/home/ubuntu/automation/DemandForecastOrdersheets/credfile/dbwisely-v2-01bfe15ef302.json"
+        # self.json_path = "./credfile/dbwisely-v2-01bfe15ef302.json"
         self.scope = [
                 'https://spreadsheets.google.com/feeds',
                 'https://www.googleapis.com/auth/drive',
@@ -21,7 +22,8 @@ class GoogleSheet:
 
 
 def get_gs_structure():
-    with open("./credfile/googlesheets_names_and_ids.json") as f:
+    with open("/home/ubuntu/automation/DemandForecastOrdersheets/credfile/googlesheets_names_and_ids.json") as f:
+    #with open("./credfile/googlesheets_names_and_ids.json") as f:
         names_and_ids = json.load(f)
 
     gs = GoogleSheet()
@@ -37,7 +39,8 @@ def get_gs_structure():
             worksheets_dict[ws.title] = ws.id
         googlesheets_json[spreadsheets.title] = {'id':spreadsheets.id, 'worksheets':worksheets_dict}
 
-    with open("./credfile/googlesheets_info.json", 'w') as f:
+    with open("/home/ubuntu/automation/DemandForecastOrdersheets/credfile/googlesheets_info.json", 'w') as f:
+    #with open("./credfile/googlesheets_info.json", 'w') as f:
         json.dump(googlesheets_json, f, ensure_ascii=False, indent=4)
     return googlesheets_json
 
