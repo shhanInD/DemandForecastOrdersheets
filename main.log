@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 13, in <module>
+    structure = get_gs_structure()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/utils.py", line 24, in get_gs_structure
+    with open("./credfile/googlesheets_names_and_ids.json") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './credfile/googlesheets_names_and_ids.json'
+준비 끝
+준비까지 :  15.327084064483643 초
+************************ 2022-11-09 04:03:17.847460 함수 실행************************
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 179, in <module>
+    worktime = work()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 128, in work
+    importrange(copy_ssname = "AOQ_RAW", copy_wsname= "AOQ_firstRe", paste_ssname="주문량 예측 Promo", paste_wsname="AOQ_firstRe(importrange)", range=["2","4"], paste = "A1")
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 67, in importrange
+    to_worksheet = gs.auth.open_by_url(default_gsurl + structure[paste_ssname]["id"]).get_worksheet_by_id(
+AttributeError: 'Spreadsheet' object has no attribute 'get_worksheet_by_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
+    print("==============", sec, "에서 문제가 생겼습니다.==============")
+NameError: name 'sec' is not defined
+준비 끝
+준비까지 :  14.938574075698853 초
+************************ 2022-11-09 04:13:17.160831 함수 실행************************
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 179, in <module>
+    worktime = work()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 128, in work
+    importrange(copy_ssname = "AOQ_RAW", copy_wsname= "AOQ_firstRe", paste_ssname="주문량 예측 Promo", paste_wsname="AOQ_firstRe(importrange)", range=["2","4"], paste = "A1")
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 67, in importrange
+    to_worksheet = gs.auth.open_by_url(default_gsurl + structure[paste_ssname]["id"]).get_worksheet_by_id(
+AttributeError: 'Spreadsheet' object has no attribute 'get_worksheet_by_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
+    print("==============", sec, "에서 문제가 생겼습니다.==============")
+NameError: name 'sec' is not defined
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 1, in <module>
+    from gspread_dataframe import set_with_dataframe
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 13, in <module>
+    from gspread.models import Cell
+ModuleNotFoundError: No module named 'gspread.models'
+준비 끝
+준비까지 :  13.890550374984741 초
+************************ 2022-11-09 04:22:16.066183 함수 실행************************
+복사 끝
+주문량 예측 Promo - > SKU별 수요량 예측 - 주문량 예측 초 걸려 작업 완료

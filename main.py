@@ -172,11 +172,11 @@ def work():
     lap_fin = time.time()-start_
     #print("총 시간 : ", lap_fin, "초")
 
-    return [lap_1, lap_2, lap_3, lap_4, lap_5, lap_6, sec]
+    return [lap_1, lap_2, lap_3, lap_4, lap_5, lap_6, lap_fin, sec]
 
 try:
     print("************************", datetime.now().date(), datetime.now().time(), "함수 실행************************")
     worktime = work()
-    print(worktime[-1], "초 걸려 작업 완료")
+    print(worktime[-2], "초 걸려 작업 완료")
 except Exception as e:
     print("==============", sec, "에서 문제가 생겼습니다.==============")
