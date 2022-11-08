@@ -1,0 +1,175 @@
+{
+    "주문량 예측": {
+        "id": "1nUSWlg-tQwWunE4rDhnjxBkvmqLVdOM1XTGdW_Cvl1w",
+        "worksheets": {
+            "주문량 예측 시트": 1151522732,
+            "신규유입자 계산": 729449773,
+            "OWOX BI Queries": 1177591042,
+            "N1N2_RR_recent_3mo": 21760689,
+            "N2N3_RR_recent_3mo": 42025397
+        }
+    },
+    "주문량 예측 BASE_Onetime": {
+        "id": "1cn9652vM2MsEaEi5T8nWJ51QQqoq_VkEXoHxmXPldT8",
+        "worksheets": {
+            "첫구매->재구매 주문량 (from Onetime) 예측": 654072639,
+            "O1O2_Onetime_Pred": 0,
+            "O1O2_Onetime_Pred_Daily": 1357904155,
+            "O1O2_Onetime_Pred_recent_3mo": 2089759611,
+            "OWOX BI Queries": 1432946128,
+            "tbN2OnetimeDailyOrders": 710558023,
+            "재구매->재구매 주문량 (from Onetime) 예측": 531336619,
+            "O2O3_Onetime_Pred": 373765965,
+            "O2O3_Onetime_Pred_Daily": 1129463775,
+            "O2O3_Onetime_Pred_recent_3mo": 898444625,
+            "tbN3OnetimeDailyOrders(18~20)": 150964016
+        }
+    },
+    "주문량 예측 BASE_Subsc": {
+        "id": "1UfcEFctRIDbM4wAzqFjqdKDn2N-hnkQJq-aAKqm_Z0A",
+        "worksheets": {
+            "첫구매->재구매 주문량 (from Subsc) 예측": 568259123,
+            "재구매->재구매 주문량 (from Subsc) 예측": 0,
+            "OWOX BI Queries": 776242157,
+            "tbN2SubscDailyOrders": 190251149,
+            "tbN3SubscDailyOrders_rollback(18~19)": 1913966513
+        }
+    },
+    "주문량 예측 Promo": {
+        "id": "1CfN_-uBiwQM7-rW8BoN-N_91TDved89eVlPwmj57Y6I",
+        "worksheets": {
+            "신제품인풋": 379368929,
+            "Promo Plan (UA)": 36104489,
+            "Promo Plan (Re)": 580010820,
+            "SKU묶음별 판매비중": 1512204631,
+            "OnSaleSKU": 1528203999,
+            "AOQ_firstRe(importrange)": 532871661,
+            "브랜드별_주문수(importrange)": 2126086698,
+            "Promo Reference": 0,
+            "Re_Promo_SKU_주문량_예측": 1684062174,
+            "Re_Promo_주문량_예측": 283658704,
+            "RE: Promo SKU_total 주문량 예측": 1134780092,
+            "RE: Promo SKU_brand 주문량 예측": 1437419510,
+            "RE: Promo SKU_brand 주문량 예측(저장)": 895666457,
+            "RE: Promo SKU_item 주문량 예측": 976919855,
+            "RE: Promo SKU_option 주문량 예측": 974084807,
+            "Promo 첫전환 SKU 주문량 예측": 1276710888,
+            "Promo 첫전환 주문량 예측": 696854680,
+            "Promo 재주문량 예측": 1884036789,
+            "Promo 첫전환 SKU_total 주문량 예측": 117883022,
+            "Promo 첫전환 SKU_brand 주문량 예측": 1906008877,
+            "Promo 첫전환 SKU_item 주문량 예측": 328494364,
+            "Promo 첫전환 SKU_option 주문량 예측": 266610677,
+            "OWOX BI Queries": 1037534240
+        }
+    },
+    "SKU별 수요량 예측": {
+        "id": "1ytUxTYFqrYRHfSrpdWrFOVCYXs2EnqXDMClXVTfpoGY",
+        "worksheets": {
+            "주문량 예측": 0,
+            "SKU 별 총 수요량 예측": 476806563,
+            "SKU 별 Base 수요량": 935161021,
+            "Promo 첫전환 제외 수요량 예측": 1251939724,
+            "Promo 첫전환 SKU 주문량 예측": 1072528065,
+            "Promo_재구매_fluctuation": 142225087,
+            "스타터세트 및 플로버 옵션별 총 수요량": 770861708,
+            "스타터세트 및 플로버 옵션별 총 BASE수요량": 1526725088,
+            "SKU별 AOQ": 2066516182,
+            "AOQ_window_controller": 2085589013,
+            "Base_N1_1회_남자": 757526618,
+            "Base_N1_1회_여자": 1200749169,
+            "Base_N1_구독_남자": 1970486846,
+            "Base_N1_구독_여자": 2824805,
+            "Base_N2_1회_남자": 1000846813,
+            "Base_N2_1회_여자": 1787243156,
+            "Base_N2_구독_남자": 1320727443,
+            "Base_N2_구독_여자": 1063584157,
+            "Base_N3_1회_남자": 385031167,
+            "Base_N3_1회_여자": 1600551114,
+            "Base_N3_구독_남자": 156564639,
+            "Base_N3_구독_여자": 89513500,
+            "Promo_재구매_1회_남자": 271239794,
+            "Promo_재구매_1회_여자": 516574594,
+            "Promo_재구매_구독_남자": 89925304,
+            "Promo_재구매_구독_여자": 678447619
+        }
+    },
+    "AOQ_RAW": {
+        "id": "1VgEDzO6kE1ds0NivbxOrOmF3Y5mYarItx1xk9wlD2_0",
+        "worksheets": {
+            "AOQ_window_controller": 1861127533,
+            "AOQ_by_seg": 0,
+            "AOQ_firstRe": 1735883479,
+            "AOQ_window_브랜드별 주문수": 1410484866,
+            "리필면도날AOQ": 2016909484,
+            "OWOX BI Queries": 1276140040,
+            "AOQ_RAW_wo_CRM": 668319812,
+            "AOQ_RAW": 1091946474,
+            "브랜드별_주문수_wo_CRM": 1667006638,
+            "브랜드별 주문수": 1583070233,
+            "한달치 판매량": 1497086797,
+            "base_window_판매량": 737686923
+        }
+    },
+    "수요예측 주문량": {
+        "id": "1Z_8ZY6HbReS6L1dE7ZyZEOV4EizqLMiGm_pQK7N6xxg",
+        "worksheets": {
+            "재구매_주문량": 0,
+            "OWOX BI Queries": 348324824,
+            "일별첫주문수": 134783728,
+            "일별재주문수": 1775445588,
+            "일별재주문수_mod": 897711453,
+            "Onetime_N1N2_RR": 1501959067,
+            "Onetime_N2N3_RR": 522991967,
+            "Subsc_RR": 1689805883
+        }
+    },
+    "발주 관리 시트": {
+        "id": "1s-MRWAoIX9GwQhnxpSs4v_GuOY3gu5QkI0FbkPgR1JE",
+        "worksheets": {
+            "발주량 관리 시트": 0,
+            "안전재고 계산": 73943210,
+            "한달치 판매량 표준편차": 803539619,
+            "스타터세트 안전재고 계산": 1052398667,
+            "스타터세트 옵션별 판매량 n일치": 2014978201,
+            "스타터세트 옵션별 판매량 합산": 1601582386,
+            "스타터세트 옵션별 계산 시트": 1567654255,
+            "플로버 옵션별 계산 시트": 1115986970,
+            "SKU별 판매 예측_누적": 533706341,
+            "Promo": 1451546864,
+            "SKU별 판매 예측": 478969345,
+            "Promo_RE": 1543302508,
+            "Promo_UA": 325635057,
+            "OWOX BI Queries": 1726189496,
+            "tbOnSaleSKU_with_productcode": 1515281885
+        }
+    },
+    "발주 관리 시트_SOP협의 SKU": {
+        "id": "12hjXxt7OKGryqphsVNyu3jzW2slIduiepPaota6ouZ0",
+        "worksheets": {
+            "협의된 SOP 시트 업로드": 0,
+            "월별 발주 여부 시트": 2012300062,
+            "현재재고시트": 1922318937,
+            "SKU별 판매량 예측": 629153789,
+            "WS_스타터세트 옵션별 판매량 예측": 786374859,
+            "PLV_칫솔 옵션별 판매량 예측": 2134100439
+        }
+    },
+    "발주시트_v2": {
+        "id": "1-oknXodUBGkNNyYcbNcAlvoX8aRVt8F-HKp62IlGyvo",
+        "worksheets": {
+            "OWOX BI Queries": 1794447300,
+            "발주 여부 시트": 0,
+            "예정 재고 입고 스케쥴": 1352582599,
+            "SOP 협의 SKU 시트": 368584195,
+            "스타터세트 1달치 판매동향": 740803151,
+            "플로버 칫솔 1달치 판매동향": 679214620,
+            "번들제품 1달치 판매동향": 355095038,
+            "스타터세트 옵션별 계산 시트": 2010354269,
+            "플로버 옵션별 계산 시트": 365884316,
+            "번들 계산 시트": 1775491961,
+            "SKU별 판매예측(importrange)": 889768380,
+            "SKU별 최근한달 출고 표준편차": 942682230
+        }
+    }
+}
