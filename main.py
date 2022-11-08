@@ -175,7 +175,7 @@ def work():
     return [lap_1, lap_2, lap_3, lap_4, lap_5, lap_6, sec]
 
 try:
-    print("************************"datetime.now().date(), datetime.now().time(), "함수 실행************************")
+    print("************************", datetime.now().date(), datetime.now().time(), "함수 실행************************")
     worktime = work()
     print(worktime[-1], "초 걸려 작업 완료")
 except Exception as e:
