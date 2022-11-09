@@ -8,6 +8,7 @@ from datetime import datetime
 
 global sec
 
+print("************************", datetime.now().date(), datetime.now().time(), "함수 실행************************")
 start_ = time.time()
 # 구글시트 내 필요한 시트의 url, id 가져오기
 structure = get_gs_structure()
@@ -175,7 +176,6 @@ def work():
     return [lap_1, lap_2, lap_3, lap_4, lap_5, lap_6, lap_fin, sec]
 
 try:
-    print("************************", datetime.now().date(), datetime.now().time(), "함수 실행************************")
     worktime = work()
     print(worktime[-2], "초 걸려 작업 완료")
 except Exception as e:
