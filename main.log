@@ -581,3 +581,125 @@ NameError: name 'sec' is not defined
 ************************ 2022-11-09 10:33:21.618586 함수 실행************************
 복사 끝
 240.481760263443 초 걸려 작업 완료
+준비 끝
+준비까지 :  14.508981466293335 초
+************************ 2022-11-09 10:43:17.100589 함수 실행************************
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 179, in <module>
+    worktime = work()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 128, in work
+    importrange(copy_ssname = "AOQ_RAW", copy_wsname= "AOQ_firstRe", paste_ssname="주문량 예측 Promo", paste_wsname="AOQ_firstRe(importrange)", range=["2","4"], paste = "A1")
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 123, in importrange
+    col=paste_fromcolumn_py)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 279, in set_with_dataframe
+    _resize_to_minimum(worksheet, y, x)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 130, in _resize_to_minimum
+    worksheet.resize(desired_rows, desired_cols)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/worksheet.py", line 1073, in resize
+    return self.spreadsheet.batch_update(body)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/spreadsheet.py", line 132, in batch_update
+    "post", SPREADSHEET_BATCH_UPDATE_URL % self.id, json=body
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
+    print("==============", sec, "에서 문제가 생겼습니다.==============")
+NameError: name 'sec' is not defined
+준비 끝
+준비까지 :  16.72219204902649 초
+************************ 2022-11-09 10:53:19.099411 함수 실행************************
+복사 끝
+230.84408593177795 초 걸려 작업 완료
+준비 끝
+준비까지 :  15.070024013519287 초
+************************ 2022-11-09 11:03:17.428394 함수 실행************************
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 179, in <module>
+    worktime = work()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 128, in work
+    importrange(copy_ssname = "AOQ_RAW", copy_wsname= "AOQ_firstRe", paste_ssname="주문량 예측 Promo", paste_wsname="AOQ_firstRe(importrange)", range=["2","4"], paste = "A1")
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 123, in importrange
+    col=paste_fromcolumn_py)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 279, in set_with_dataframe
+    _resize_to_minimum(worksheet, y, x)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 130, in _resize_to_minimum
+    worksheet.resize(desired_rows, desired_cols)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/worksheet.py", line 1073, in resize
+    return self.spreadsheet.batch_update(body)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/spreadsheet.py", line 132, in batch_update
+    "post", SPREADSHEET_BATCH_UPDATE_URL % self.id, json=body
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
+    print("==============", sec, "에서 문제가 생겼습니다.==============")
+NameError: name 'sec' is not defined
+준비 끝
+준비까지 :  15.96659231185913 초
+************************ 2022-11-09 11:13:17.878992 함수 실행************************
+복사 끝
+214.27726435661316 초 걸려 작업 완료
+준비 끝
+준비까지 :  14.420302391052246 초
+************************ 2022-11-09 11:23:16.712163 함수 실행************************
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 179, in <module>
+    worktime = work()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 128, in work
+    start = time.time()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 123, in importrange
+    row=paste_fromrow_py,
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 279, in set_with_dataframe
+    _resize_to_minimum(worksheet, y, x)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 130, in _resize_to_minimum
+    worksheet.resize(desired_rows, desired_cols)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/worksheet.py", line 1073, in resize
+    return self.spreadsheet.batch_update(body)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/spreadsheet.py", line 132, in batch_update
+    "post", SPREADSHEET_BATCH_UPDATE_URL % self.id, json=body
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
+    print("==============", sec, "에서 문제가 생겼습니다.==============")
+NameError: name 'sec' is not defined
+************************ 2022-11-09 11:33:02.329253 함수 실행************************
+준비 끝
+준비까지 :  16.766706466674805 초
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 179, in <module>
+    worktime = work()
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 129, in work
+    importrange(copy_ssname = "AOQ_RAW", copy_wsname= "AOQ_firstRe", paste_ssname="주문량 예측 Promo", paste_wsname="AOQ_firstRe(importrange)", range=["2","4"], paste = "A1")
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 124, in importrange
+    col=paste_fromcolumn_py)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 279, in set_with_dataframe
+    _resize_to_minimum(worksheet, y, x)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread_dataframe.py", line 130, in _resize_to_minimum
+    worksheet.resize(desired_rows, desired_cols)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/worksheet.py", line 1073, in resize
+    return self.spreadsheet.batch_update(body)
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/spreadsheet.py", line 132, in batch_update
+    "post", SPREADSHEET_BATCH_UPDATE_URL % self.id, json=body
+  File "/home/ubuntu/.local/lib/python3.7/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
+    print("==============", sec, "에서 문제가 생겼습니다.==============")
+NameError: name 'sec' is not defined
