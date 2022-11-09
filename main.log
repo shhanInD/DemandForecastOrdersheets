@@ -743,3 +743,8 @@ SyntaxError: name 'sec' is assigned to before global declaration
     global sec
     ^
 SyntaxError: name 'sec' is assigned to before global declaration
+************************ 2022-11-09 13:23:02.340032 함수 실행************************
+준비 끝
+준비까지 :  13.66981053352356 초
+복사 끝
+207.18980860710144 초 걸려 작업 완료

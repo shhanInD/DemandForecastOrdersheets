@@ -155,27 +155,41 @@ def work():
     start = time.time()
     importrange(copy_ssname="주문량 예측 Promo", copy_wsname="Promo 첫전환 주문량 예측", range=["NJ2","ABK7"], paste_ssname="주문량 예측", paste_wsname="주문량 예측 시트", paste="B23")
     lap_4 = time.time()-start
-    sec = "주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 1"
+    sec = "주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ Promo-UA 첫 전환 주문량 예측"
     #print("주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 1 : ", lap_4, "초")
 
     start = time.time()
+    importrange(copy_ssname="주문량 예측 Promo", copy_wsname="Promo 재주문량 예측", range=["NE5", "ABF6"],
+                paste_ssname="주문량 예측", paste_wsname="주문량 예측 시트", paste="B31")
+    lap_5 = time.time() - start
+    sec = "주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ Promo-UA 재주문량 예측 - 전환 구 재구매"
+    # print("주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 1 : ", lap_5, "초")
+
+    start = time.time()
+    importrange(copy_ssname="주문량 예측 Promo", copy_wsname="Promo 재주문량 예측", range=["NE16", "ABF17"],
+                paste_ssname="주문량 예측", paste_wsname="주문량 예측 시트", paste="B34")
+    lap_6 = time.time() - start
+    sec = "주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ Promo-UA 재주문량 예측 - 재구매 후 재구매"
+    # print("주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 1 : ", lap_6, "초")
+
+    start = time.time()
     importrange(copy_ssname="주문량 예측 Promo", copy_wsname="Re_Promo_주문량_예측", range=["E2","NF2"], paste_ssname="주문량 예측", paste_wsname="주문량 예측 시트", paste="B36")
-    lap_5 = time.time()-start
-    sec = "주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 2"
-    #print("주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 2 : ", lap_5, "초")
+    lap_7 = time.time()-start
+    sec = "주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ Promo-RE 재주문량 예측"
+    #print("주문량 예측 Promo - > 주문량 예측 - 주문량 예측 시트 _ 2 : ", lap_7, "초")
 
     start = time.time()
     ## 'SKU별 수요량 예측'시트에 정보 넣기
     importrange(copy_ssname="주문량 예측", copy_wsname="주문량 예측 시트", range=["A","NC"], paste_ssname="SKU별 수요량 예측", paste_wsname="주문량 예측", paste="A1")
-    lap_6 = time.time()-start
+    lap_8 = time.time()-start
     sec = "주문량 예측 Promo - > SKU별 수요량 예측 - 주문량 예측"
-    #print("주문량 예측 Promo - > SKU별 수요량 예측 - 주문량 예측 : ", lap_6, "초")
+    #print("주문량 예측 Promo - > SKU별 수요량 예측 - 주문량 예측 : ", lap_8, "초")
 
     print("복사 끝")
     lap_fin = time.time()-start_
     #print("총 시간 : ", lap_fin, "초")
 
-    return [lap_1, lap_2, lap_3, lap_4, lap_5, lap_6, lap_fin, sec]
+    return [lap_1, lap_2, lap_3, lap_4, lap_5, lap_6, lap_7, lap_8, lap_fin, sec]
 
 try:
     worktime = work()
