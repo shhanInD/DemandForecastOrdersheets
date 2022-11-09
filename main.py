@@ -90,14 +90,14 @@ def importrange(copy_ssname, copy_wsname, paste_ssname, paste_wsname, range,
     if copy_torow_gs is None:
         copy_torow_py = copy_torow_gs
     elif copy_torow_gs > 0:
-        copy_torow_py = copy_torow_gs + 1
+        copy_torow_py = copy_torow_gs
     else:
         copy_torow_py = None
 
     if copy_tocolumn_gs is None:
         copy_tocolumn_py = copy_tocolumn_gs
     elif copy_tocolumn_gs > 0:
-        copy_tocolumn_py = copy_tocolumn_gs + 1
+        copy_tocolumn_py = copy_tocolumn_gs
     else:
         copy_tocolumn_py = None
 
