@@ -703,3 +703,43 @@ Traceback (most recent call last):
   File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 182, in <module>
     print("==============", sec, "에서 문제가 생겼습니다.==============")
 NameError: name 'sec' is not defined
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration
+  File "/home/ubuntu/automation/DemandForecastOrdersheets/main.py", line 10
+    global sec
+    ^
+SyntaxError: name 'sec' is assigned to before global declaration

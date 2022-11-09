@@ -6,8 +6,9 @@ import re
 import string
 from datetime import datetime
 
-sec = "시작"
 global sec
+sec = "시작"
+
 
 print("************************", datetime.now().date(), datetime.now().time(), "함수 실행************************")
 start_ = time.time()
