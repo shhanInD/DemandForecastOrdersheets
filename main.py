@@ -10,14 +10,14 @@ global sec
 sec = "시작"
 
 
-print("************************", datetime.now().date(), datetime.now().time(), "함수 실행************************")
+print("***************", datetime.now().date(), datetime.now().time(), "함수 실행***************")
 start_ = time.time()
 # 구글시트 내 필요한 시트의 url, id 가져오기
 structure = get_gs_structure()
 
-print("준비 끝")
+# print("준비 끝")
 lap = time.time()-start_
-print("준비까지 : ", lap, "초")
+# print("준비까지 : ", lap, "초")
 
 def importrange(copy_ssname, copy_wsname, paste_ssname, paste_wsname, range,
                  paste = "A1", structure = structure,
@@ -185,7 +185,7 @@ def work():
     sec = "주문량 예측 Promo - > SKU별 수요량 예측 - 주문량 예측"
     #print("주문량 예측 Promo - > SKU별 수요량 예측 - 주문량 예측 : ", lap_8, "초")
 
-    print("복사 끝")
+    #print("복사 끝")
     lap_fin = time.time()-start_
     #print("총 시간 : ", lap_fin, "초")
 
